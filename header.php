@@ -107,7 +107,7 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 
 <div class="container content-top">
   <div class="col-sm-2 nav-side hidden-xs">
-    <a href="index.html"><div class="head-logo"></div></a>
+    <a href="<?php get_home_url(); ?>"><div class="head-logo"></div></a>
     <div class="nav-group">
       <ul class="jack-nav">
             <!-- display wp pages -->
