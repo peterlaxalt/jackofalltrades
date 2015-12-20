@@ -14,9 +14,6 @@ get_header(); ?>
   $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post();
 
-  /*
-  Pull category for each unique post using the ID
-  */
   $terms = get_the_terms( $post->ID, 'portfolio-categories' );
        if ( $terms && ! is_wp_error( $terms ) ) :
 
@@ -29,20 +26,18 @@ get_header(); ?>
            $tax_links = join( " ", str_replace(' ', '-', $links));
            $tax = strtolower($tax_links);
        else :
-  	 $tax = '';
+     $tax = '';
        endif;
 
-          /* Insert category name into portfolio-item class */
-          echo '<div class="col-sm-4 gallery-item-container">
-              <div class="all gallery-item '. $tax .'">';
-          echo '<div><a href="'. the_permalink() .'" title="'. the_title_attribute() .'">';
-          echo '<img src="'. wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 60,60 ), false, '' ); .'" class="gallery-grid-item img-responsive"/>';
-          echo '</a></div>';
-          echo '<div class="gallery-info"><strong>'. the_title() .'</strong>';
-          echo '<br />'. $tax .' - '. the_date('Y', '<span>', '</span>'); .'</div>';
-          echo '</div>';
-          echo '</div>';
-    endwhile; ?>
+   echo '<div class="all portfolio-item '. $tax .'">';
+   echo '<a href="'. the_permalink() .'" title="'. the_title_attribute() .'">';
+   echo '<div class="thumbnail">'. the_post_thumbnail() .'</div>';
+   echo '</a>';
+   echo '<h2>'. the_title() .'</h2>';
+   echo '<div>'. the_excerpt() .'</div>';
+   echo '</div>';
+ endwhile;
+ ?>
 
 </div> <!-- /gallery-container -->
 
