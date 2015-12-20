@@ -27,15 +27,13 @@
 				<?php endif; ?>
 
           </div> <!-- /page-content -->
+        </div><!-- /gallery-item-container (inner page wrapper because pete is dumb) -->
+</div><!-- /gallery-container (page wrapper because pete is dumb) -->
 
     <!-- embellishment (sidebar) -->
     <div class="col-sm-2 embellish-container" id="stick">
 				<?php get_sidebar(); ?>
     </div>
     <!-- /embellishment -->
-
-      </div><!-- /gallery-container -->
-
-</div>
 
 <?php get_footer(); ?>
