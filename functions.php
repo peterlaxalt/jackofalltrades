@@ -15,4 +15,8 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+// enable support for featured images
+
+add_theme_support( 'post-thumbnails' );
+
 ?>
