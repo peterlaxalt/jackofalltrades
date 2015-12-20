@@ -10,68 +10,16 @@
 
     <!-- load styles + fonts-->
 
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bs/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic' rel='stylesheet' type='text/css'>
 
-  <!-- load jquery -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <!-- load wp_head for plugin developers to access head-->
+  <!-- load wp_head for plugin developers to access head & load bootstrap jquery -->
 
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
 
-  <!-- bootstrap stuff -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bs/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <!-- <script src=" echo get_template_directory_uri(); /bs/js/bootstrap.min.js"></script> -->
-
-  <!-- smooth scroll to anchor -->
-
-  <script>
-  $(function() {
-    $('a[href^=#][href*=to]').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
-
-  <!-- ############# PORTFOLIO ADJUSTMENTS ############# -->
-
-  <!-- add modal clases -->
-<script>
-// .modal-backdrop classes
-
-$(".modal-fullscreen").on('show.bs.modal', function () {
-  setTimeout( function() {
-    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-  }, 0);
-});
-$(".modal-fullscreen").on('hidden.bs.modal', function () {
-  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-});
-</script>
-
-  <!-- instafeed info -->
-  <!-- ig code: 02e788e3dfe14c89a1d3388f6d0a10b1 -->
-  <!-- accessToken: '236529641.1753a44.857cd1a2461d4f42bf6f3df335cddcbe', -->
-  <!-- ig clientID: 1753a44bb2824810af56532c0b7363f5 -->
-
-  </script>
-
-  <title>Jack Of All Trades: Blacksmith, Craftsman, Artist, Explorer</title>
+  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?><</title>
 
 </head>
 <body>
