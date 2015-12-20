@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-5";
+  src:url("fonts/untitled-font-5.eot");
+  src:url("fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-5.woff") format("woff"),
+    url("fonts/untitled-font-5.ttf") format("truetype"),
+    url("fonts/untitled-font-5.svg#untitled-font-5") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-5" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-5" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fa-add:before {
+  content: "a";
+}
+.icon-fa-angle-double-left:before {
+  content: "b";
+}
+.icon-fa-angle-double-right:before {
+  content: "c";
+}
+.icon-fa-angle-down:before {
+  content: "d";
+}
+.icon-fa-angle-left:before {
+  content: "e";
+}
+.icon-fa-angle-right:before {
+  content: "f";
+}
+.icon-fa-angle-up:before {
+  content: "g";
+}
+.icon-fa-avatar:before {
+  content: "h";
+}
+.icon-fa-back-arrow:before {
+  content: "i";
+}
+.icon-fa-bars:before {
+  content: "j";
+}
+.icon-fa-bell:before {
+  content: "k";
+}
+.icon-fa-book-collection:before {
+  content: "l";
+}
+.icon-fa-book-stack:before {
+  content: "m";
+}
+.icon-fa-calendar:before {
+  content: "n";
+}
+.icon-fa-calories:before {
+  content: "o";
+}
+.icon-fa-caret-down:before {
+  content: "p";
+}
+.icon-fa-caret-left:before {
+  content: "q";
+}
+.icon-fa-caret-right:before {
+  content: "r";
+}
+.icon-fa-caret-up:before {
+  content: "s";
+}
+.icon-fa-check:before {
+  content: "t";
+}
+.icon-fa-clock-o:before {
+  content: "u";
+}
+.icon-fa-comment-balloon:before {
+  content: "v";
+}
+.icon-fa-cookedby:before {
+  content: "w";
+}
+.icon-fa-download:before {
+  content: "x";
+}
+.icon-fa-expand:before {
+  content: "y";
+}
+.icon-fa-facebook:before {
+  content: "z";
+}
+.icon-fa-fire-avocado:before {
+  content: "A";
+}
+.icon-fa-folder:before {
+  content: "B";
+}
+.icon-fa-google-plus:before {
+  content: "C";
+}
+.icon-fa-heart:before {
+  content: "D";
+}
+.icon-fa-heart-outline:before {
+  content: "E";
+}
+.icon-fa-home:before {
+  content: "F";
+}
+.icon-fa-inbox:before {
+  content: "G";
+}
+.icon-fa-information:before {
+  content: "H";
+}
+.icon-fa-instagram:before {
+  content: "I";
+}
+.icon-fa-linkedin:before {
+  content: "J";
+}
+.icon-fa-list:before {
+  content: "K";
+}
+.icon-fa-location:before {
+  content: "L";
+}
+.icon-fa-login:before {
+  content: "M";
+}
+.icon-fa-logout:before {
+  content: "N";
+}
+.icon-fa-mail:before {
+  content: "O";
+}
+.icon-fa-my-favorites:before {
+  content: "P";
+}
+.icon-fa-my-recipes:before {
+  content: "Q";
+}
+.icon-fa-newsletter:before {
+  content: "R";
+}
+.icon-fa-nutrition:before {
+  content: "S";
+}
+.icon-fa-open-book:before {
+  content: "T";
+}
+.icon-fa-paperclip:before {
+  content: "U";
+}
+.icon-fa-password:before {
+  content: "V";
+}
+.icon-fa-pencil:before {
+  content: "W";
+}
+.icon-fa-pinterest:before {
+  content: "X";
+}
+.icon-fa-print:before {
+  content: "Y";
+}
+.icon-fa-recent:before {
+  content: "Z";
+}
+.icon-fa-recipe-stack:before {
+  content: "0";
+}
+.icon-fa-scale:before {
+  content: "1";
+}
+.icon-fa-search:before {
+  content: "2";
+}
+.icon-fa-settings:before {
+  content: "3";
+}
+.icon-fa-share-alt:before {
+  content: "4";
+}
+.icon-fa-shopping-cart:before {
+  content: "5";
+}
+.icon-fa-shopping-cart-2:before {
+  content: "6";
+}
+.icon-fa-stack:before {
+  content: "7";
+}
+.icon-fa-star:before {
+  content: "8";
+}
+.icon-fa-times:before {
+  content: "9";
+}
+.icon-fa-trophy:before {
+  content: "!";
+}
+.icon-fa-twitter:before {
+  content: "\"";
+}
+.icon-fa-user:before {
+  content: "#";
+}
+.icon-fa-view:before {
+  content: "$";
+}
+.icon-fa-view-inverse:before {
+  content: "%";
+}
+.icon-fa-camera:before {
+  content: "&";
+}
+.icon-fa-camera-flash:before {
+  content: "'";
+}
+.icon-fa-trash-o:before {
+  content: "(";
+}
+.icon-fa-upload:before {
+  content: ")";
+}
+.icon-atc-fa-newest:before {
+  content: "*";
+}
+.icon-fa-nav-history:before {
+  content: "+";
+}
+.icon-fa-forum-comment:before {
+  content: ",";
+}
+.icon-fa-videos:before {
+  content: "-";
+}
+.icon-fa-questions:before {
+  content: ".";
+}
+.icon-fa-thumb-up:before {
+  content: "/";
+}
+.icon-fa-thumbs-down:before {
+  content: ":";
+}
+.icon-fa-top-photo-reviews:before {
+  content: ";";
+}
+.icon-fa-top-searches:before {
+  content: "<";
+}
+.icon-fa-calories-1:before {
+  content: "=";
+}
