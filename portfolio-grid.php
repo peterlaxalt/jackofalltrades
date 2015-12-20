@@ -1,7 +1,8 @@
 <?php
 /*
-Template Name: Portfolio Grid
+Template Name: Portfolio grid
 */
+
 get_header(); ?>
 
 <div class="col-sm-10 gallery-container">
@@ -14,6 +15,9 @@ get_header(); ?>
   $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post();
 
+  /*
+  Pull category for each unique post using the ID
+  */
   $terms = get_the_terms( $post->ID, 'portfolio-categories' );
        if ( $terms && ! is_wp_error( $terms ) ) :
 
@@ -26,18 +30,19 @@ get_header(); ?>
            $tax_links = join( " ", str_replace(' ', '-', $links));
            $tax = strtolower($tax_links);
        else :
-     $tax = '';
+  	 $tax = '';
        endif;
+?>
 
-   echo '<div class="all portfolio-item '. $tax .'">';
-   echo '<a href="'. the_permalink() .'" title="'. the_title_attribute() .'">';
-   echo '<div class="thumbnail">'. the_post_thumbnail() .'</div>';
-   echo '</a>';
-   echo '<h2>'. the_title() .'</h2>';
-   echo '<div>'. the_excerpt() .'</div>';
-   echo '</div>';
- endwhile;
- ?>
+<div class="all portfolio-item <?php echo $tax; ?>">
+<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+<div class="thumbnail"><?php the_post_thumbnail(); ?></div>
+</a>
+<h2><?php the_title();</h2>
+<div><?php the_excerpt(); ?></div>
+</div>
+
+<?php endwhile; ?>
 
 </div> <!-- /gallery-container -->
 
