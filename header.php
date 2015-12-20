@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic' rel='stylesheet' type='text/css'>
 
-  <!-- load wp_head for plugin developers to access head & load bootstrap jquery -->
+  <?php /* ************************************************************************************* */ ?>
+  <?php /* load wp_head for plugin developers to access head and load bootstrap jquery */ ?>
+  <?php /* ************************************************************************************* */ ?>
 
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
@@ -29,7 +31,10 @@
     <div class="container-fluid navbar-inverse hidden-sm hidden-md hidden-lg">
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
-              <!-- display wp pages -->
+          <?php /* ************************************************************************************* */ ?>
+          <?php /* list wp pages in nav */ ?>
+          <?php /* ************************************************************************************* */ ?>
+
           <?php wp_list_pages(array('title_li' => '')); ?>
         </ul>
       </div>
@@ -38,7 +43,9 @@
   <!-- header + overlay -->
 
   <div class="container-fluid">
-    <!-- display featured image -->
+    <?php /* ************************************************************************************* */ ?>
+    <?php /* display featured image on page or post */ ?>
+    <?php /* ************************************************************************************* */ ?>
     <?php if (has_post_thumbnail( $post->ID ) ): ?>
       <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
           <div class="row head-row" style="background-image:url('<?php echo $image[0]; ?>');"></div>
@@ -62,7 +69,9 @@
     <a href="<?php get_home_url(); ?>"><div class="head-logo"></div></a>
     <div class="nav-group">
       <ul class="jack-nav">
-            <!-- display wp pages -->
+              <?php /* ************************************************************************************* */ ?>
+              <?php /* list wp pages in nav */ ?>
+              <?php /* ************************************************************************************* */ ?>
         <?php wp_list_pages(array('title_li' => '')); ?>
       </ul>
 </div>

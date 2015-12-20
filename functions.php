@@ -1,5 +1,9 @@
 <?php
 
+// ****************************************************
+// load bootstrap jquery
+// ****************************************************
+
 function wpbootstrap_scripts_with_jquery()
 {
 	// Register the script like this for a theme:
@@ -10,12 +14,16 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
+// ****************************************************
 // disable auto <p> tags
+// ****************************************************
 
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+// ****************************************************
 // enable support for featured images
+// ****************************************************
 
 add_theme_support( 'post-thumbnails' );
 
