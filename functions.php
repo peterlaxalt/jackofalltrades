@@ -67,4 +67,16 @@ function create_lm_portfolio()
   register_post_type('portfolio',$args);
 }
 
-?>
+// ****************************************************
+// add categories for filtering
+// ****************************************************
+
+register_taxonomy( "portfolio-categories",
+	array( 	"portfolio" ),
+	array( 	"hierarchical" => true,
+			"labels" => array('name'=>"Creative Fields",'add_new_item'=>"Add New Field"),
+			"singular_label" => __( "Field" ),
+			"rewrite" => array( 'slug' => 'fields', // This controls the base slug that will display before each term
+							'with_front' => false)
+		 )
+);
