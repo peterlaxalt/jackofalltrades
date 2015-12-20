@@ -26,16 +26,17 @@
       <!-- load wp plugin footer scripts -->
       <?php wp_footer(); ?>
       <!-- load jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
       <!-- load smoothscroll to anchor starting with "to" -->
-      <script src="<?php echo get_template_directory_uri(); ?>/smoothscroll.js"></script>
-      <!-- load fullscreen bs modals -->
-      <script src="<?php echo get_template_directory_uri(); ?>/modal-adjustments.js"></script>
-      <!-- load instafeed -->
-      <script src="<?php echo get_template_directory_uri(); ?>/modal-adjustments.js"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/smoothscroll.js"></script>
+      <!-- load fullscreen bs modals load isotope (for portfolio) -->
+      <script src="<?php echo get_template_directory_uri(); ?>/js/modal-adjustments.js"></script>
+      <!-- load isotope (for portfolio) -->
+      <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.isotope.min.js" type="text/javascript">
+
       <!-- instafeed info -->
       <!-- ig code: 02e788e3dfe14c89a1d3388f6d0a10b1 -->
-      <!-- accessToken: '236529641.1753a44.857cd1a2461d4f42bf6f3df335cddcbe', -->
+      <!-- accessToken: '236529641.1753a44.857cd1a2461d4f42bf6f3df335cddcbe' -->
       <!-- ig clientID: 1753a44bb2824810af56532c0b7363f5 -->
 
 </body>
