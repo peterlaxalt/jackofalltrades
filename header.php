@@ -19,7 +19,7 @@
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
 
-  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?><</title>
+  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
 
 </head>
 <body>

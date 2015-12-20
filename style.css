@@ -11,6 +11,13 @@ License: Attribution-NonCommercial-ShareAlike 4.0 International
 License URI: http://creativecommons.org/licenses/by-nc-sa/4.0/
 */
 
+
+/******************************/
+/******************************/
+/* universal */
+/******************************/
+/******************************/
+
 body, html {
   font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 300;
@@ -30,10 +37,17 @@ a:hover {
   text-decoration:line-through !important;
 }
 
+
+/******************************/
+/******************************/
+/* header area */
+/******************************/
+/******************************/
+
 /* head-image */
 
 .head-row {
-/*  background-image:url('assets/head-img.jpg'); */
+/*  background-image:url('assets/head-img.jpg'); makes featured image the head-row image*/
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center center;
@@ -47,7 +61,14 @@ a:hover {
   z-index:1;
 }
 
-/* nav - mobile */
+
+/******************************/
+/******************************/
+/* navigation */
+/******************************/
+/******************************/
+
+/* nav-mobile */
 
 .navbar {
   margin-bottom:0px !important;
@@ -150,7 +171,14 @@ a:hover {
   padding:0px;
 }
 
+
+/******************************/
+/******************************/
 /* content */
+/******************************/
+/******************************/
+
+/* page holder */
 
 .content-container {
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.26);
@@ -180,7 +208,12 @@ a:hover {
   padding-bottom:30px;
 }
 
+
+/******************************/
+/******************************/
 /* footer */
+/******************************/
+/******************************/
 
 .footer-container {
   height:auto;
@@ -192,6 +225,12 @@ a:hover {
   padding-left: 0px !important;
   margin-bottom:15px;
 }
+
+/******************************/
+/******************************/
+/* sidebar */
+/******************************/
+/******************************/
 
 /* embellishment */
 
@@ -221,8 +260,13 @@ a:hover {
   font-size:22px;
 }
 
-/* gallery thumbnails */
+/******************************/
+/******************************/
+/* portfolio */
+/******************************/
+/******************************/
 
+/* portfolio grid */
 
 .gallery-image {
   width:187px;
@@ -256,7 +300,7 @@ a:hover {
     padding-left:0;
 }
 
-/* gallery page */
+/* individual portfolio page */
 
 .gallery-head {
   height: 413px;
@@ -301,10 +345,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
-/* animations */
+/******************************/
+/******************************/
+/* transitions */
+/******************************/
+/******************************/
+
+/* page load transition */
 
 body {
-
     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .5s; /* Firefox < 16 */
         -ms-animation: fadein .5s; /* Internet Explorer */
