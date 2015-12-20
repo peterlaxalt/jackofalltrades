@@ -8,10 +8,10 @@
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <!-- display featured image -->
-            <?php if (has_post_thumbnail( $post->ID ) ): ?>
-              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-              <img src="<?php echo $image[0]; ?>"  class="img-responsive" /><br />
-            <?php endif; ?>
+            <?php /* if (has_post_thumbnail( $post->ID ) ): */ ?>
+              <?php /* $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); */ ?>
+              <!-- <img src="<?php echo $image[0]; ?>"  class="img-responsive" /><br /> -->
+            <?php /* endif; */ ?>
 
             <!-- display page title -->
             <h1 class="pagehead"><?php the_title(); ?></h1><br />
