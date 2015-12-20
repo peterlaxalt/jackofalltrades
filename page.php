@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="col-sm-10 gallery-container">
-      <div class="col-sm-12 gallery-item-container">
+      <div class="col-sm-12 page-container">
           <div class="page-content">
 
 						<!-- start wp-loop (page content) -->
@@ -27,7 +27,7 @@
 				<?php endif; ?>
 
           </div> <!-- /page-content -->
-        </div><!-- /gallery-item-container (inner page wrapper because pete is dumb) -->
+        </div><!-- /page-container -->
 </div><!-- /gallery-container (page wrapper because pete is dumb) -->
 
     <!-- embellishment (sidebar) -->

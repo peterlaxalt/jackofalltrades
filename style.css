@@ -147,6 +147,7 @@ a:hover {
 .jack-nav {
   list-style: none;
   font-weight: 500;
+  padding:0px;
 }
 
 /* content */
@@ -173,6 +174,10 @@ a:hover {
   color: #8F7D5B;
   font-size: 20px;
   font-weight: 100;
+}
+
+.page-container {
+  padding-bottom:30px;
 }
 
 /* footer */
