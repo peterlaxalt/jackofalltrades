@@ -11,12 +11,15 @@
 
             <!-- gallery item -->
             <div class="col-sm-4 gallery-item-container">
+             <a href="<?php the_permalink(); ?>">
               <div class="gallery-item">
-                <div><a href="<?php the_permalink(); ?>"><?php
-$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo '<img src="'. $feat_image .'" class="gallery-grid-item img-responsive"/>'; ?></a></div>
+                <div class="gallery-img-container"><?php
+$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo '<div style="background-image:url('. $feat_image .');" class="gallery-img gallery-grid-item img-responsive"></div>'; ?>
+                </div>
                 <div class="gallery-info"><strong><?php the_title(); ?></strong><br />
                    <?php the_time('Y'); ?></div>
               </div>
+             </a>
             </div>
             <!-- /gallery item -->
 
