@@ -407,9 +407,9 @@ body {
 }
 
 .gallery-img:hover {
-   -webkit-animation: animatedBackground 2s ease-in-out 1;
-		-moz-animation: animatedBackground 2s ease-in-out 1;
-		animation: animatedBackground 2s ease-in-out 1;
+   -webkit-animation: animatedBackground 4s ease-in-out 1;
+		-moz-animation: animatedBackground 4s ease-in-out 1;
+		animation: animatedBackground 4s ease-in-out 1;
 		-webkit-animation-fill-mode: forwards;
 		animation-fill-mode: forwards;
 }
@@ -420,14 +420,14 @@ body {
 			-moz-transform: scale(1, 1);
 			-ms-transform: scale(1, 1);
 			-o-transform: scale(1, 1);
-			transform: scale(1, 1)
+			transform: scale(1, 1);
 		}
-		50% {
+		100% {
 		-webkit-transform: scale(1.1, 1.1);
 		-moz-transform: scale(1.1, 1.1);
 		-ms-transform: scale(1.1, 1.1);
 		-o-transform: scale(1.1, 1.1);
-		transform: scale(1.1, 1.1)
+		transform: scale(1.1, 1.1);
 		}
 
 	}
@@ -439,14 +439,14 @@ body {
 			-moz-transform: scale(1, 1);
 			-ms-transform: scale(1, 1);
 			-o-transform: scale(1, 1);
-			transform: scale(1, 1)
+			transform: scale(1, 1);
 		}
-		50% {
+		100% {
 		-webkit-transform: scale(1.1, 1.1);
 		-moz-transform: scale(1.1, 1.1);
 		-ms-transform: scale(1.1, 1.1);
 		-o-transform: scale(1.1, 1.1);
-		transform: scale(1.1, 1.1)
+		transform: scale(1.1, 1.1);
 		}
 
 	}
@@ -456,14 +456,14 @@ body {
 			-moz-transform: scale(1, 1);
 			-ms-transform: scale(1, 1);
 			-o-transform: scale(1, 1);
-			transform: scale(1, 1)
+			transform: scale(1, 1);
 		}
-		50% {
+		100% {
 		-webkit-transform: scale(1.1, 1.1);
 		-moz-transform: scale(1.1, 1.1);
 		-ms-transform: scale(1.1, 1.1);
 		-o-transform: scale(1.1, 1.1);
-		transform: scale(1.1, 1.1)
+		transform: scale(1.1, 1.1);
 		}
 
 	}

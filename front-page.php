@@ -1,29 +1,33 @@
 <?php get_header(); ?>
 
 <div class="col-sm-10 gallery-container">
+      <div class="col-sm-12 page-container">
           <div class="page-content">
 
 						<!-- start wp-loop (page content) -->
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <!-- display portfolio content -->
+            <!-- display featured -->
+            <?php if (has_post_thumbnail( $post->ID ) ): ?>
+              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+              <img src="<?php echo $image[0]; ?>"  class="img-responsive" /><br />
+            <?php endif; ?>
 
-            <!-- gallery item -->
-            <div class="col-sm-4 gallery-item-container">
-              <div class="gallery-item">
-                <div><a href="<?php the_permalink(); ?>"><img src="assets/gallery-placeholder.jpg" class="gallery-grid-item img-responsive"/></a></div>
-                <div class="gallery-info"><strong><?php the_title(); ?></strong><br />
-                   <?php the_time('Y'); ?></div>
-              </div>
-            </div>
-            <!-- /gallery item -->
+            <!-- display page title -->
+            <h1 class="pagehead"><?php the_title(); ?></h1><br />
+
+            <!-- display page content -->
+            <p>
+              <?php the_content(); ?>
+            </p>
 
 						<!-- end wp-loop (page content) -->
 				<?php endwhile; else: ?>
-					<p><?php _e('Portfolio is empty.'); ?></p>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 				<?php endif; ?>
 
           </div> <!-- /page-content -->
+        </div><!-- /page-container -->
 </div><!-- /gallery-container (page wrapper because pete is dumb) -->
 
     <!-- embellishment (sidebar) -->

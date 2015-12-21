@@ -13,14 +13,15 @@
       <?php endif; ?>
       <div class="gallery-head-content">
         <h1><?php the_title(); ?></h1>
-        <span class="breadcrumbs"><?php the_time(‘l, F jS, Y’); ?> - <?php the_category( ', ' ); ?></span><br />
+        <span class="breadcrumbs"><?php the_time('F j, Y'); ?> - <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span><br />
         <!-- <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum libero at lacus accumsan consequat.</p> -->
       </div>
     </div>
   </div> <!-- /gallery item header -->
 
   <!-- start page content -->
-  <div class="col-sm-10 page-content">
+  <div class="col-sm-10 page-container">
+    <div class="col-sm-12 page-content">
 
             <!-- display page content -->
             <p>
@@ -31,8 +32,8 @@
 				<?php endwhile; else: ?>
 					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 				<?php endif; ?>
-
   </div> <!-- /page-content -->
+</div> <!-- /page-container -->
 
     <!-- embellishment (sidebar) -->
     <div class="col-sm-2 embellish-container" id="stick">
