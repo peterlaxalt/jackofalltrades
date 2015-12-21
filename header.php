@@ -53,7 +53,7 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    <a href="index.html"><div class="mobile-head-logo hidden-sm hidden-md hidden-lg"></div></a>
+    <a href="<?php echo site_url(); ?>"><div class="mobile-head-logo hidden-sm hidden-md hidden-lg"></div></a>
   </div>
 
     <!-- desktop navbar -->

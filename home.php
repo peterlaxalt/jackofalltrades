@@ -12,7 +12,8 @@
             <!-- gallery item -->
             <div class="col-sm-4 gallery-item-container">
               <div class="gallery-item">
-                <div><a href="<?php the_permalink(); ?>"><img src="assets/gallery-placeholder.jpg" class="gallery-grid-item img-responsive"/></a></div>
+                <div><a href="<?php the_permalink(); ?>"><?php
+$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo '<img src="'. $feat_image .'" class="gallery-grid-item img-responsive"/>'; ?></a></div>
                 <div class="gallery-info"><strong><?php the_title(); ?></strong><br />
                    <?php the_time('Y'); ?></div>
               </div>
