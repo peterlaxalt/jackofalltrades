@@ -66,7 +66,7 @@
 
 <div class="container content-top">
   <div class="col-sm-2 nav-side hidden-xs">
-    <a href="<?php get_home_url(); ?>"><div class="head-logo"></div></a>
+    <a href="<?php echo site_url(); ?>"><div class="head-logo"></div></a>
     <div class="nav-group">
       <ul class="jack-nav">
               <?php /* ************************************************************************************* */ ?>
