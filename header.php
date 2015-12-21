@@ -73,4 +73,4 @@
 
     <!-- begin content --> <!-- ends in footer.php -->
 
-  <div class="col-sm-10 content-container">
+  <div class="col-sm-10 content-container <?php if (is_single($post) ): echo 'gallery-head-fix'; endif; ?>">

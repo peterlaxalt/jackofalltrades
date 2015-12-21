@@ -320,7 +320,7 @@ strong {
 
 .gallery-head {
   height: 413px;
-  background-image: url('assets/gallery-item-head.jpg');
+/* background-image: url('assets/gallery-item-head.jpg'); placeholder for design purposes */
   background-size:cover;
   background-position:center center;
   background-repeat:no-repeat;
