@@ -47,7 +47,7 @@ a:hover {
 /* head-image */
 
 .head-row {
-/*  background-image:url('assets/head-img.jpg'); makes featured image the head-row image*/
+  background-image:url('assets/head-img.jpg');
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center center;
